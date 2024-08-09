@@ -118,6 +118,15 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+import os
+# Static files
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles')]
+
+# Media files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Static files (CSS, JavaScript, Images)
@@ -164,21 +173,4 @@ EMAIL_HOST_PASSWORD = 'lcuo mbfz plok lavf'
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8111',  # Add your front-end URL here
-]
-
-import os
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-MEDIA_URLS ='/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-# Optional: specify static files directories if they are located in specific folders
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'staticfiles'),
 ]
