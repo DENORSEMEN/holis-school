@@ -169,5 +169,12 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_URL = '/static/'
+
+# Define STATIC_ROOT where Django will collect static files
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
+# Optional: Define additional static files directories
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'staticfiles'),
+]
