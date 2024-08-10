@@ -88,6 +88,15 @@ WSGI_APPLICATION = 'holis_school.wsgi.application'
 #     }
 # }
 
+DATABASES = {'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'calljyqw_holis',
+        'USER': 'calljyqw_holis',
+        'PASSWORD': '2s4l~Qr3-kU9',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
 
 
 

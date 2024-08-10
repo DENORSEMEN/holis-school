@@ -29,3 +29,4 @@ django-cors-headers>=4.4.0
 
 # JWT Authentication
 djangorestframework-simplejwt>=5.3.1
+cloudinary==1.41.0
