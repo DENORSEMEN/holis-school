@@ -36,6 +36,7 @@
 # echo "Build script executed successfully."
 
 
-pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 
-python 3.10 manage.py collectstatic
+# Collect static files
+python3 manage.py collectstatic 
