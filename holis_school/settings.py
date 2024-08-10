@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'rest_framework_simplejwt',
     'corsheaders',
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -178,3 +180,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'staticfiles'),
 ]
+
+import cloudinary_storage
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME':'ddhoev3wk',
+    "API_KEY":"329468279858699",
+    "API_SECRET":"qe80LFkMhx-bTAWARhv9VmVxWEo"
+}
+
+DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"

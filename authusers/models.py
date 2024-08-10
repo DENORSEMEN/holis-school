@@ -90,7 +90,7 @@ class AuthUser(AbstractUser):
 
 class UserProfile(models.Model):
     user = models.OneToOneField(AuthUser, on_delete=models.CASCADE, related_name='profile')
-    government_id_image = models.ImageField(upload_to='government_ids/', blank=True, null=True)
+    government_id_image = models.ImageField(upload_to='government_ids', blank=True, null=True)
     date_of_birth = models.DateField(null=True, blank=True)
     gender = models.CharField(max_length=10, blank=True, null=True)  # e.g., 'Male', 'Female', 'Other'
     address = models.TextField(blank=True, null=True)
@@ -105,7 +105,7 @@ from django.core.mail import send_mail
 class AccountRecoveryRequest(models.Model):
     email = models.EmailField()
     government_id = models.CharField(max_length=50)
-    photo = models.ImageField(upload_to='recovery_photos/')
+    photo = models.ImageField(upload_to='recovery_photos')
     submitted_at = models.DateTimeField(auto_now_add=True)
     processed = models.BooleanField(default=False)
     approved = models.BooleanField(default=False)
