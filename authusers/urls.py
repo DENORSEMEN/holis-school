@@ -15,4 +15,6 @@ urlpatterns = [
     path('user-detail/', UserDetailView.as_view(), name='user-detail'),
     path('forgot-user-id/', ForgotUserIDView.as_view(), name='forgot-user-id'),
 #after adding the jwt make migrations
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
