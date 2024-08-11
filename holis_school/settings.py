@@ -88,16 +88,16 @@ WSGI_APPLICATION = 'holis_school.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'railway',
-#         'USER': 'postgres',
-#         'PASSWORD': 'yUNYiGXLqwGlTgxtKitYOlmKbImekKEc',
-#         'HOST': 'postgres.railway.internal',
-#         'PORT': '5432'
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'verceldb',
+        'USER': 'default',
+        'PASSWORD': 'oCZq1jeA7hVu',
+        'HOST': 'ep-sparkling-bonus-a4uojk0m-pooler.us-east-1.aws.neon.tech',
+        'PORT': '5432'
+    }
+}
 
 
 import dj_database_url
@@ -105,11 +105,11 @@ import dj_database_url
 # Existing Django settings
 
 # Parse database configuration from a URL
-DATABASE_URL = "postgres://default:oCZq1jeA7hVu@ep-sparkling-bonus-a4uojk0m.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
+# DATABASE_URL = "postgres://default:oCZq1jeA7hVu@ep-sparkling-bonus-a4uojk0m.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
 
-DATABASES = {
-    'default': dj_database_url.parse(DATABASE_URL, conn_max_age=600, ssl_require=True)
-}
+# DATABASES = {
+#     'default': dj_database_url.parse(DATABASE_URL, conn_max_age=600, ssl_require=True)
+# }
 
 
 
