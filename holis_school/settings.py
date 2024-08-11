@@ -88,14 +88,16 @@ WSGI_APPLICATION = 'holis_school.wsgi.application'
 #     }
 # }
 
+AUTH_USER_MODEL = "authusers.AuthUser"
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'ttIrRKittSEhpejAVttCJIFIFEbfCrtw',
-        'HOST': 'viaduct.proxy.rlwy.net',
-        'PORT': '29006'
+        'PASSWORD': 'JcODINUawEqrQgSBYhbEQajGHvjYpFfh',
+        'HOST': 'monorail.proxy.rlwy.net',
+        'PORT': '30946'
     }
 }
 
