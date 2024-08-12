@@ -7,10 +7,7 @@ from django.core.mail import send_mail
 
 def generate_unique_user_id(length=6):
     """Generate a unique user ID of a given length."""
-    while True:
-        user_id = ''.join(random.choices(string.ascii_letters + string.digits, k=length))
-        if not AuthUser.objects.filter(user_id=user_id).exists():
-            return user_id
+    return ''.join(random.choices(string.ascii_letters + string.digits, k=length))
 
 def generate_otp(length=6):
     """Generate a random OTP of a given length."""
