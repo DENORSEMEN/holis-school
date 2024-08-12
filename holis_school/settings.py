@@ -194,6 +194,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'staticfiles'),
 ]
 
+# Media files
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 import cloudinary_storage
 
 CLOUDINARY_STORAGE = {
@@ -202,4 +206,3 @@ CLOUDINARY_STORAGE = {
     "API_SECRET":"qe80LFkMhx-bTAWARhv9VmVxWEo"
 }
 
-DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
