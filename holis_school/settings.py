@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'holis_school.wsgi.application'
 #     }
 # }
 
-AUTH_USER_MODEL = "authusers.AuthUser"
+
 
 DATABASES = {
     'default': {
