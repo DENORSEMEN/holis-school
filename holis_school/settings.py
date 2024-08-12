@@ -96,8 +96,8 @@ DATABASES = {
         'NAME': 'railway',
         'USER': 'postgres',
         'PASSWORD': 'XjfenMXNJfjYSqQmhBBmzbQXuQxkqsLM',
-        'HOST': ' viaduct.proxy.rlwy.net',
-        'PORT': '14484 '
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT': '14484'
     }
 }
 
