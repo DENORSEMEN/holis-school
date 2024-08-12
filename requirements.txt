@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 algoliasearch==3.0.0
 algoliasearch-django==3.0.0
 asgiref==3.8.1
@@ -66,3 +67,38 @@ urllib3==1.26.6
 Werkzeug==3.0.2
 xlrd==2.0.1
 xlwt==1.3.0
+=======
+# Django and Django-related packages
+Django>=4.2.13
+django-cors-headers>=4.4.0
+djangorestframework>=3.15.2
+djangorestframework-simplejwt>=5.3.1
+
+# For Django REST Framework API documentation
+drf-spectacular>=0.27.2
+drf-yasg>=1.21.7
+
+# Database adapter for PostgreSQL
+psycopg2-binary>=2.9.6
+
+# Optional: Additional Django packages
+django-crispy-forms>=1.12.0  # For form rendering
+django-import-export>=4.1.0  # For importing/exporting data
+django-jazzmin>=2.6.0  # For admin interface styling
+
+# Optional: For testing
+pytest>=7.0.0
+pytest-django>=4.0.0
+
+# Additional utilities
+requests>=2.26.0  # For making HTTP requests
+python-dotenv>=0.20.0  # For environment variable management
+
+# Libraries for handling CORS (Cross-Origin Resource Sharing)
+django-cors-headers>=4.4.0
+
+
+djangorestframework-simplejwt>=5.3.1
+django-cloudinary-storage
+pillow==10.3.0
+>>>>>>> 461e1535970ee63a25a3cd4069182154736bb4f5
