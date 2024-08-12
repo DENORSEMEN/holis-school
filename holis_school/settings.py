@@ -77,7 +77,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'holis_school.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
@@ -178,9 +177,11 @@ EMAIL_HOST_USER = 'venvictor602@gmail.com'
 EMAIL_HOST_PASSWORD = 'lcuo mbfz plok lavf'
 
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:8111',  # Add your front-end URL here
-]
+CORS_ALLOW_ALL_ORIGINS = True
+
+# CORS_ALLOWED_ORIGINS = [
+#     'http://localhost:8111',  # Add your front-end URL here
+# ]
 
 
 STATIC_URL = '/static/'

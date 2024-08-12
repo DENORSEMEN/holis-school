@@ -27,7 +27,6 @@ python-dotenv>=0.20.0  # For environment variable management
 # Libraries for handling CORS (Cross-Origin Resource Sharing)
 django-cors-headers>=4.4.0
 
-# JWT Authentication
+
 djangorestframework-simplejwt>=5.3.1
 cloudinary==1.41.0
-mysqlclient==2.2.4
