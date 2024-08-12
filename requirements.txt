@@ -30,3 +30,4 @@ django-cors-headers>=4.4.0
 
 djangorestframework-simplejwt>=5.3.1
 django-cloudinary-storage
+pillow==10.3.0
